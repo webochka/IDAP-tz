@@ -1,0 +1,478 @@
+	
+.content
+	border-top: 1px solid #d3d7da
+
+.content__header
+	display: flex
+	align-content: center
+
+	+r(1000)
+		flex-wrap: wrap
+
+	&-search
+		flex-grow: 1
+		border-bottom: 1px solid #d3d7da
+		text-align: right
+		padding-top: 25px
+
+		+r(1000)
+			width: 100%
+			background: #fff
+			border-bottom: none
+			text-align: left
+			padding-left: 28px
+
+		+r(470)
+			padding-left: 15px
+
+		
+.tabs-caption
+	display: flex
+
+	+r(670)
+		width: 100%
+
+	&__item
+		display: flex
+		align-items: center
+		cursor: pointer
+		background: #f8f8f8
+		border: 1px solid #d3d7da
+		padding: 15px 75px 15px 33px
+		border-top: none
+		font-size: 24px
+		color: #4b4b4b
+
+		+r(1000)
+			padding: 12px 54px 11px 26px
+
+		+r(670)
+			padding: 12px 48px 11px 28px
+			width: 50%
+
+		+r(470)
+			padding: 15px 0
+
+		&--active
+			border-bottom: 1px solid #fff
+			background: #fff
+
+			.tabs-caption__counter
+				background: #adadad
+
+	.tabs-caption__counter
+		+r(670)
+			width: 25px
+			line-height: 25px
+				 
+	&__img
+		width: auto
+
+		+r(670)
+			width: 25px
+
+		+r(470)
+			display: none
+
+
+	&-inner
+		position: relative
+		margin-left: 15px
+
+	&__counter
+		position: absolute
+		left: 103%
+		bottom: 27%
+		background: #ff503f
+
+		+r(470)
+			left: 105%
+			bottom: -28%
+
+	&__text
+		+r(670)
+			font-size: 18px
+
+		+r(470)
+			font-size: 16px
+
+.search__input
+	display: inline-block
+	vertical-align: middle
+	font-size: 18px
+	color: #4b4b4b
+	margin-right: 28px
+	width: 275px
+	-webkit-box-shadow: 0 0 0 30px #f1f1f1 inset !important
+
+	+r(1000)
+		-webkit-box-shadow: 0 0 0 30px #fff inset !important
+
+	+r(600)
+		font-size: 12px
+
+	&::-webkit-input-placeholder
+		color: #c1c1c1
+		font-size: 18px
+
+		+r(600)
+			font-size: 12px
+
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration
+		display: none
+	
+.tabs-content-inner
+	background: #fff
+	display: flex
+	justify-content: space-between
+	padding: 28px
+
+	+r(1020)
+		flex-wrap: wrap
+
+	+r(470)
+		padding: 15px
+
+.tabs-content
+	border: 1px solid #d3d7da
+	width: 70%
+	border-radius: 2px
+
+	+r(1020)
+		width: 100%
+
+.projects-header
+	padding: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-bottom: 1px solid #d3d7da
+
+	+r(670)
+		flex-wrap: wrap
+
+	+r(600)
+		padding: 15px
+
+	&__search
+		flex-grow: 1
+
+		+r(670)
+			order: 4
+			width: 100%
+			margin-top: 15px
+
+	.search__input
+		margin-right: 5px
+		width: 350px
+		-webkit-box-shadow: 0 0 0 30px #fff inset !important
+
+		+r(1150)
+			width: 272px
+
+		+r(410)
+			width: 252px
+
+	&__filter
+		padding: 10px 30px
+		border: 1px solid #bebebe
+		border-radius: 20px
+		appearance: none
+		-webkit-appearance: none
+		-moz-appearance: none
+		color: #4b4b4b
+		font-size: 13px
+		background: url('../images/icon/open.png')
+		background-repeat: no-repeat
+		background-size: auto
+		background-position: 94%
+
+		+r(1150)
+			padding: 10px 30px 10px 20px
+
+		+r(600)
+			padding: 7px 27px 7px 11px
+
+		&-option
+			color: #4b4b4b
+		
+	&__add
+		color: #fff
+		font-size: 28px
+		background: #ff503f
+		width: 40px
+		min-width: 40px
+		line-height: 40px
+		border-radius: 40px
+		margin-left: 15px
+		text-align: center
+
+		+r(600)
+			width: 30px
+			min-width: 30px
+			line-height: 30px
+			font-size: 24px
+	
+	
+.projects-list
+	overflow-y: scroll
+
+	&__item
+		
+		&-inner
+			display: flex
+			align-items: center
+			border-bottom: 1px solid #d3d7da
+			padding: 30px
+
+			+r(600)
+				padding: 15px
+
+			+r(500)
+				flex-wrap: wrap
+				justify-content: space-between
+
+	&__status
+		font-family: "helvetica"
+		font-size: 24px
+		color: #bebebe
+		border: 1px solid #bebebe
+		border-radius: 4px
+		padding: 9px
+
+		+r(1170)
+			padding: 6px
+			font-size: 20px
+
+		+r(600)
+			padding: 3px
+			font-size: 14px
+
+
+		&--red
+			border: none
+			background: #ff503f
+			color: #fff
+
+		&--ready
+			font-size: 14px
+			padding: 14px 12px
+			text-transform: uppercase
+
+			+r(1170)
+				padding: 12px 9px
+				font-size: 10px
+
+			+r(600)
+				padding: 6px 2px
+
+	&__task
+		flex-grow: 1
+		padding: 0 13px
+		color: #4b4b4b
+		font-size: 22px
+
+		+r(1170)
+			font-size: 20px
+
+		+r(600)
+			font-size: 16px
+
+		+r(500)
+			order: 5
+			width: 100%
+			padding: 10px 0 0 0
+
+		&--ready
+			color: #bebebe
+			text-decoration: line-through
+
+			&:after
+				content: ''
+				display: inline-block
+				width: 16px
+				height: 13px
+				background: url('../images/icon/ready.png')
+				margin-left: 8px
+
+	&__name
+		color: #4b4b4b
+		text-transform: uppercase
+		font-size: 14px
+		padding: 10px 18px
+		border: 1px solid #bebebe
+		border-radius: 20px
+		margin-right: 10px
+		white-space: nowrap
+
+		+r(600)
+			font-size: 12px
+			padding: 6px 10px
+
+	&__search
+		width: 34px
+		min-width: 34px
+		line-height: 34px
+		border: 1px solid #bebebe
+		border-radius: 34px
+		text-align: center
+		cursor: pointer
+		transition: all 0.2s linear
+
+		+r(600)
+			width: 25px
+			min-width: 25px
+			line-height: 25px
+
+		&-icon
+			width: 20px
+
+		&:hover
+			background: #ff503f
+			border: 1px solid #ff503f
+			transition: all 0.2s linear
+
+
+			.projects-list__search-icon
+				filter: contrast(200%)
+				transition: all 0.2s linear
+
+	&__more-icon
+		margin-left: 10px
+		position: relative
+		width: 34px
+		min-width: 34px
+		line-height: 34px
+		display: inline-block
+		border-radius: 34px
+		border: 1px solid #bebebe
+		text-align: center
+		transition: all 0.2s linear
+		cursor: pointer
+
+		+r(600)
+			width: 25px
+			min-width: 25px
+			line-height: 25px
+
+.projects-list__more-icon--open
+	transform: rotate(-180deg)
+	transition: all 0.2s linear
+
+.projects-list
+	&__more
+		display: none
+		background: #f7f7f7
+
+		.projects-list__task
+			font-size: 20px
+
+			+r(1170)
+				order: 6
+				width: 100%
+				padding: 10px 0 0
+
+			+r(600)
+				font-size: 16px
+
+		.projects-list__item-inner
+
+			+r(1170)
+				flex-wrap: wrap 
+				justify-content: space-between
+
+	&__update
+		padding: 10px 18px
+		border: 1px solid #bebebe
+		border-radius: 20px
+		margin: 0 10px
+		white-space: nowrap
+
+		+r(600)
+			padding: 6px 10px
+
+		&-text
+			font-family: "freight-sass"
+			text-transform: uppercase
+			color: #4b4b4b
+			font-size: 15px
+
+			+r(600)
+				font-size: 12px
+			
+		&-time
+			font-family: "helvetica"
+			font-size: 13px
+
+		&-icon
+			margin: -3px 8px 0 0
+
+	&__users
+		display: flex
+
+		+r(600)
+			order: 1
+			width: 100%
+			padding-top: 10px
+
+		.users-list__img-inner
+			width: 30px
+			margin-right: 5px
+
+		.users-list__status
+			width: 6px
+			height: 6px
+			top: -2px
+			left: -1px
+
+		img
+			width: 30px
+
+	&__users-more
+		display: none
+		text-align: center
+		width: 30px
+		line-height: 30px
+		border: 1px solid #bebebe
+		border-radius: 33px
+		font-family: "helvetica"
+		font-size: 14px
+		color: #a7a7a7
+		cursor: pointer
+
+		&--visible
+			display: inline-block
+	
+.archiv
+	padding: 20px 29px
+	border-top: 1px solid #d3d7da
+	cursor: pointer
+	
+	+r(600)
+		padding: 20px 15px
+
+	&__text
+		display: inline-block
+		color: #4b4b4b
+		font-size: 18px
+
+		&:after 
+			content: ''
+			display: inline-block
+			width: 6px
+			height: 6px
+			border-top: 2px solid #a6a6a6
+			border-right: 2px solid #a6a6a6
+			transform: rotate(45deg) 
+			vertical-align: middle
+			margin-left: 10px
+
+select::-ms-expand
+	display: none
+
+
+
+

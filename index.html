@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+
+<aside class="nav">
+	<div class="nav-top">
+		<div class="nav__photo">
+			<img src="images/pic/user.jpg" alt="">
+			<p class="counter nav__counter counter--red">2</p>
+		</div>
+		<div class="nav__icon nav__icon--after nav__icon--active">
+			<img class="nav__icon-img" src="images/icon/board.svg" alt="">
+			<p class="nav__icon-text">Board</p>
+		</div>
+		<div class="nav__icon nav__icon--after">
+			<img class="nav__icon-img" src="images/icon/menu.svg" alt="">
+			<p class="counter nav__counter">9</p>
+			<p class="nav__icon-text">Projects</p>
+		</div>
+		<div class="nav__icon nav__icon--after">
+			<img class="nav__icon-img" src="images/icon/settings.svg" alt="">
+			<p class="nav__icon-text">Settings</p>
+		</div>
+	</div>
+	<div class="nav-bottom">
+		<div class="nav__icon">
+			<img class="nav__icon-img" src="images/icon/upgrade.svg" alt="">
+			<p class="counter nav__counter counter--red">3</p>
+			<p class="nav__icon-text">Upgrade</p>
+		</div>
+		<div class="nav__icon nav__icon--after nav__icon-logout">
+			<img class="nav__icon-img" src="images/icon/logout.png" alt="">
+			<p  class="nav__icon-text">Logout</p>
+		</div>
+	</div>
+</aside>
+<main class="main">
+	<header class="header">
+		<div class="header__inner">
+			<img class="header__menu-btn" src="images/icon/menu.svg" alt="">
+			<button class="header__update-btn">
+				<img src="images/icon/headerupdate.png" alt="">
+			</button>
+			<h2 class="header__title">Dashboar</h2>
+		</div>
+		<div class="header__inner header__inner--bottom">
+			<button type="button" class="header__open-btn"></button>
+			<div class="header__dropdown">
+				<div class="header__dropdown-btn">
+					<img src="images/icon/chat.png" alt="">
+					<p class="header__dropdown-text">5 user online</p>
+					<img class="header__dropdown-arrow" src="images/icon/open.png" alt="">
+				</div>
+				<div class="header__dropdown-list">
+					
+				</div>
+			</div>
+		</div>
+	</header>
+<div class="content">
+	<div class="content__header">
+		<div class="tabs-caption">
+	    	<div class="tabs-caption__item">
+	    		<img class="tabs-caption__img" src="images/icon/tabicon1.png" alt="">
+	    		<div class="tabs-caption-inner">
+	    			<p class="tabs-caption__text">Active Projects</p>
+	    			<p class="counter tabs-caption__counter">9</p>
+	    		</div>
+	    	</div>
+	    	<div class="tabs-caption__item">
+	    		<img class="tabs-caption__img" src="images/icon/tabicon2.png" alt="">
+	    		<div class="tabs-caption-inner">
+	    			<p class="tabs-caption__text">Messenger</p>
+	    			<p class="counter tabs-caption__counter">2</p>
+	    		</div>
+	    	</div>
+	   	</div>
+ 	  	<form class="search content__header-search">
+   			<input class="search__input" type="search" name="search" placeholder="Search Project, User, Task, etc..."> 
+   		</form>
+  	</div>
+	
+	<div class="tabs-content-inner">
+		<div class="tabs-content">
+			<div class="tabs-content__item">
+		
+			    <div class="projects-header">
+			    	<form class="search projects-header__search">
+   						<input class="search__input" type="search" name="search" placeholder="Search a Project with Name, Task, User..."> 
+   					</form>
+   					<select class="projects-header__filter">
+						<option class="projects-header__filter-option" value=''>
+							New Projects (descending)
+						</option>
+						<option class="projects-header__filter-option" value=''>
+							New Projects (ascending)
+						</option>
+						
+					</select>
+					<button class="projects-header__add" type="button">+</button>
+					
+
+			    </div>
+
+			    <ul class="projects-list">
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">23%</p>
+							<p class="projects-list__task">Create Contact Formular</p>
+							<p class="projects-list__name">Worlda</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+					
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">87%</p>
+							<p class="projects-list__task">Create Subpage PSD</p>
+							<p class="projects-list__name">Panorama</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+
+
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">83%</p>
+							<p class="projects-list__task">Layout & implementation in HTML & CSS</p>
+							<p class="projects-list__name">Ebay Relaunch</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">23%</p>
+							<p class="projects-list__task">Create Contact Formular</p>
+							<p class="projects-list__name">Worlda</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+					
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">87%</p>
+							<p class="projects-list__task">Create Subpage PSD</p>
+							<p class="projects-list__name">Panorama</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+
+
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">83%</p>
+							<p class="projects-list__task">Layout & implementation in HTML & CSS</p>
+							<p class="projects-list__name">Ebay Relaunch</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+					<li  class="projects-list__item">
+						<div class="projects-list__item-inner">
+							<p class="projects-list__status projects-list__status--red">23%</p>
+							<p class="projects-list__task">Create Contact Formular</p>
+							<p class="projects-list__name">Worlda</p>
+							<figure class="projects-list__search">
+							<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+							</figure>
+							<figure class="projects-list__more-icon">
+								<img  src="images/icon/open.png" alt="">
+							</figure>
+						</div>
+						<ul class="projects-list__more">
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status">66%</p>
+								<p class="projects-list__task">Creating the Context</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face1.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face3.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more projects-list__users-more--visible">+3</p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Today,</span>
+									<span class="projects-list__update-text projects-list__update-time">13:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+							<li class="projects-list__item-inner">
+								<p class="projects-list__status projects-list__status--ready">ready</p>
+								<p class="projects-list__task projects-list__task--ready">Implementation in the Layout</p>
+								<div class="projects-list__users">
+									<div class="users-list__img-inner">
+										<img src="images/pic/face2.png" alt="">
+										<p class="users-list__status"></p>
+									</div>
+									<div class="users-list__img-inner">
+										<img src="images/pic/face4.png" alt="">
+										<p class="users-list__status users-list__status--online"></p>
+									</div>
+									<p class="projects-list__users-more"></p>
+								</div>
+								<button type="button" class="projects-list__update">
+									<img class="projects-list__update-icon" src="images/icon/update.png" alt="">
+									<span class="projects-list__update-text">Yestarday,</span>
+									<span class="projects-list__update-text projects-list__update-time">12:40</span>
+									<span class="projects-list__update-text">PM</span>
+								</button>
+								<figure class="projects-list__search">
+									<img class="projects-list__search-icon" src="images/icon/search.svg" alt="">
+								</figure>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			    <div class="archiv projects-archiv">
+					<p class="archiv__text project-archiv__text">Project Archiv</p>
+				</div>
+			</div>
+	 	 	<div class="tabs-content__item"></div>
+		</div>
+
+		
+<div class="users-list-inner">
+		<ul class="users-list">
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face1.png" alt="">
+					<p class="users-list__status users-list__status--online"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Mark P.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face2.png" alt="">
+					<p class="users-list__status users-list__status--online"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Marvin S.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face3.png" alt="">
+					<p class="users-list__status users-list__status--online"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Sebastian K.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face2.png" alt="">
+					<p class="users-list__status"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Sebastian K.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face1.png" alt="">
+					<p class="users-list__status"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Marvin S.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face1.png" alt="">
+					<p class="users-list__status users-list__status--online"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Mark P.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face2.png" alt="">
+					<p class="users-list__status"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Marvin S.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			<li class="users-list__item">
+				<div class="users-list__img-inner">
+					<img src="images/pic/face1.png" alt="">
+					<p class="users-list__status users-list__status--online"></p>
+				</div>
+				<div class="users-list__info">
+					<span class="users-list__text users-list__text--bold">Mark P.</span>
+					<span class="users-list__text">add an Image into Worlda</span>
+					<p class="users-list__date">Today, 10:30 PM</p>
+				</div>
+			</li>
+			
+		</ul>
+		<div class="archiv users-archiv">
+			<p class="archiv__text users-archiv__text">Activity Archiv</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+		</main>
+    </div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

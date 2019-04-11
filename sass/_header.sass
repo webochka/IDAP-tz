@@ -1,0 +1,142 @@
+.header
+	padding: 32px 30px
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+	+r(470)
+		flex-wrap: wrap
+		padding: 5px 15px 15px
+
+	&__menu-btn
+		width: 30px
+		height: 30px
+		margin-right: 10px
+		display: none
+
+		+r(970)
+			display: block
+
+	&__inner
+		display: flex
+		align-items: center
+
+		+r(470)
+			width: 100%
+			padding-top: 10px
+
+		&--bottom
+			+r(470)
+				justify-content: space-between
+
+	&__update-btn
+		width: 41px
+		line-height: 41px
+		background: #ff503f
+		border-radius: 41px
+
+		+r(600)
+			width: 30px
+			line-height: 30px
+
+	&__title
+		font-size: 16px
+		font-weight: 400
+		color: #4b4b4b
+		border: 1px solid #cfcfcf
+		padding: 11px 23px
+		border-radius: 23px
+		margin: 0 10px
+
+		+r(600)
+			padding: 8px 17px
+
+
+	&__open-btn
+		position: relative
+		width: 41px
+		height: 41px
+		border-radius: 41px
+		background: #aacc4e
+		margin-right: 10px
+
+		+r(600)
+			width: 30px
+			height: 30px
+
+		+r(470)
+			order: 2
+
+		&:after
+			content: ''
+			position: absolute
+			top: 35%
+			left: 37%
+			width: 8px 
+			height: 8px
+			display: inline-block
+			border-bottom: 2px solid #fff
+			border-right: 2px solid #fff
+			transform: rotate(45deg)
+
+			+r(600)
+				top: 28%
+				left: 33%
+
+	&__dropdown
+		position: relative
+
+		&-btn
+			border: 1px solid #bebebe
+			border-radius: 30px
+			padding: 11px 16px
+			display: flex
+			align-items: center
+			cursor: pointer
+
+			+r(600)
+				padding: 8px 13px
+
+		&-list
+			width: 130%
+			height: 200px
+			position: absolute
+			top: 150%
+			right: 0
+			background: #fff
+			z-index: 100
+			box-shadow: 0 -1px 5px #cfcfcf
+			display: none
+
+		&-list--open
+			display: block
+
+		&-text
+			font-family: "helvetica"
+			text-transform: uppercase
+			font-size: 13px
+			color: #4b4b4b
+			padding: 0 10px
+
+		&-arrow
+			transform: rotate(0deg)
+			transition: all 0.2s linear
+
+		&-arrow--open
+			transform: rotate(180deg)
+			transition: all 0.2s linear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
